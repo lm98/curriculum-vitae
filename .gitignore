@@ -1,4 +1,4 @@
 cv.pdf
 preview/
-cv-*.pdf
-out-*.pdf
+# Build outputs — the PDF is produced by CI, not versioned
+*.pdf
