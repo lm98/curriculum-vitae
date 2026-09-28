@@ -168,3 +168,20 @@
 )
 
 #let summary(s) = block(below: 0.2em, text(size: 9.6pt, md(s)))
+
+// ── Full document ───────────────────────────────────────────
+#let render(cv) = {
+  show: setup.with(name: cv.name)
+  header(cv.name, cv.headline, cv.contacts)
+  summary(cv.summary)
+  section("Experience")
+  experience(cv.experience)
+  section("Projects")
+  projects(cv.projects)
+  section("Skills")
+  skills(cv.skills)
+  section("Publications")
+  publications(cv.publications)
+  section("Education")
+  education(cv.education)
+}

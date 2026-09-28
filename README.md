@@ -5,9 +5,9 @@ Source of my CV, written in [Typst](https://typst.app).
 | File | What it is |
 |---|---|
 | `cv.yaml` | **All the content.** Edit this to update the CV. |
-| `template.typ` | Layout and styling (colors, fonts, spacing live in the `theme` dictionary at the top). |
-| `cv.typ` | Entry point: loads the YAML and decides the section order. |
-| `fonts/` | Vendored fonts (Inter, JetBrains Mono — both SIL OFL) so builds are identical everywhere. |
+| `themes/*.typ` | Layouts: `modern` (default), `sidebar`, `editorial`. Colors, fonts and spacing live in each file's `theme` dictionary. |
+| `cv.typ` | Entry point: loads the YAML and renders it with the selected theme. |
+| `fonts/` | Vendored fonts (Inter, JetBrains Mono, Source Serif 4 — all SIL OFL) so builds are identical everywhere. |
 
 ## Build
 
@@ -17,6 +17,8 @@ Requires Typst ≥ 0.13 (`cargo install typst-cli`, `brew install typst`, or a r
 make          # → cv.pdf
 make watch    # recompile on save
 make preview  # PNG pages in preview/
+make THEME=sidebar   # build with another theme
+make themes          # build all themes for comparison
 ```
 
 Text fields in `cv.yaml` accept inline Typst markup: `*bold*`, `_italic_`,
