@@ -1,0 +1,134 @@
+# ─────────────────────────────────────────────────────────────
+#  CV content — edit this file, not the template.
+#  Text fields accept Typst inline markup: *bold*, _italic_,
+#  `code`, #link("https://…")[label].
+#  Remove an entry or a whole section by deleting/commenting it.
+# ─────────────────────────────────────────────────────────────
+
+name: Leonardo Micelli
+headline: Software Engineer · Distributed Systems & MLOps
+
+contacts:
+  - { label: "micellileonardobm@gmail.com", url: "mailto:micellileonardobm@gmail.com" }
+  - { label: "+39 334 159 5388",            url: "tel:+393341595388" }
+  - { label: "github.com/lm98",             url: "https://github.com/lm98" }
+  - { label: "linkedin.com/in/leomic",      url: "https://linkedin.com/in/leomic" }
+  - { label: "Bologna, Italy" }
+
+summary: >-
+  Software engineer building distributed platforms at the intersection of
+  systems engineering and machine learning. For the past two years I have led
+  the development of an open-source Digital Twin ecosystem for healthcare —
+  Kotlin microservices, a TypeScript frontend and containerised deployments —
+  and co-designed its MLOps and federated learning layers, published in
+  peer-reviewed venues. Previously built cloud ETL pipelines on Snowflake at
+  Philip Morris International. Fluent in Kotlin, Rust, Python and TypeScript.
+
+experience:
+  - role: Research Fellow — Software Engineering
+    org: University of Urbino "Carlo Bo"
+    location: Urbino, Italy
+    dates: Mar 2024 – Present
+    bullets:
+      - >-
+        Lead developer and maintainer of
+        #link("https://github.com/Whitelabel-Human-Digital-Twin")[*White Label Human Digital Twin*],
+        an open-source platform for healthcare Digital Twins: Kotlin/Ktor
+        microservices for persistence and twin provisioning, a TypeScript
+        monitoring frontend, and a Docker Compose deployment shipping images
+        via GHCR and GitHub Actions.
+      - >-
+        Author of #link("https://github.com/ktwinx/ktwinx")[*ktwinx*], a Kotlin
+        framework for Human Digital Twins with a pluggable runtime (WLDT-based
+        implementation) and MQTT-based distribution.
+      - >-
+        Co-designed *Digital Twin Aggregates*, a hierarchical architecture
+        that drives drift-aware model retraining (MLOps) across patient twins
+        — published in _Future Generation Computer Systems_ — and extended it
+        to hierarchical federated learning (under review).
+      - >-
+        *iDASY project:* designed the Digital Twin for monitoring neuro-motor
+        development of preterm infants and delivered its full-stack monitoring
+        system (#link("https://github.com/Whitelabel-Human-Digital-Twin/whdt-monitor-infra")[whdt-monitor]).
+      - >-
+        Co-supervised several bachelor's theses and curricular internships.
+
+  - role: Data Engineer
+    org: Philip Morris International
+    location: Bologna, Italy
+    dates: Feb 2023 – Feb 2024   # TODO confirm start date
+    bullets:
+      - >-
+        Built and operated a scheduled ETL pipeline (Matillion, Python,
+        Amazon S3) ingesting weather data for tobacco-growing areas from an
+        external API into a Snowflake data model.
+      - >-
+        Product Owner and developer of the *Sustainability Dashboard*
+        (Power BI, Dataflows), computing KPIs such as acquired-material
+        tonnage and recyclability, used by the Sustainability department
+        for reporting to regulatory authorities.
+
+  - role: Software Engineer (Summer Internship)   # TODO confirm contract type
+    org: Dofra srl
+    location: Ravenna, Italy
+    dates: Jun 2021 – Aug 2021
+    bullets:
+      - >-
+        Built an Android app (Java) collecting telemetry from industrial
+        battery chargers over Bluetooth/Wi-Fi, backed by a Node.js/Express
+        service on MongoDB.
+
+projects:
+  - name: RuFi — Rust Fields
+    url: https://github.com/lm98/rufi
+    tags: [Rust, ESP32, Distributed Systems]
+    desc: >-
+      Rust implementation of the Aggregate Computing paradigm for programming
+      collective adaptive systems via computational fields. Core and
+      distributed crates; runs on ESP32 microcontrollers. MSc thesis.
+  - name: Football Forge
+    url: https://github.com/lm98/fforge
+    tags: [Rust, Simulation, CLI]
+    desc: >-
+      Offline football management simulator in Rust, structured as a
+      multi-crate workspace (simulation core, domain model, game frontend).
+      Playable from the CLI; in active development.
+
+publications:
+  - authors: "L. Micelli et al."
+    title: "Digital Twin Aggregates for Hierarchical and Adaptive Collaborative Learning in Smart-Healthcare"
+    venue: "Under review"
+    year: 2026
+  - authors: "D. Domini, L. Micelli, S. Burattini, S. Montagna"
+    title: "Digital Twin Aggregates for adaptive MLOps retraining policies in healthcare"
+    venue: "Future Generation Computer Systems, vol. 185"
+    year: 2026
+    doi: 10.1016/j.future.2026.108674
+  - authors: "L. Micelli, S. Montagna"
+    title: "Human Digital Twin for Healthcare Applications: a White Label Digital Twin Implementation"
+    venue: "ACM GoodIT '25, pp. 90–98"
+    year: 2025
+    doi: 10.1145/3748699.3749778
+
+skills:
+  - { area: Languages,             items: "Kotlin, Rust, Python, TypeScript, Java, Scala, SQL" }
+  - { area: Backend & Distributed, items: "Ktor, Node.js/Express, MQTT, RabbitMQ, Akka, Vert.x, REST" }
+  - { area: Data & ML,             items: "Snowflake, Matillion, Power BI, MongoDB, PyTorch, MLOps, Federated Learning" }
+  - { area: DevOps,                items: "Docker, Docker Compose, GitHub Actions, GHCR, Gradle, Git" }
+  - { area: Spoken,                items: "Italian (native), English (professional)" }
+
+education:
+  - degree: M.Sc. Computer Science and Engineering
+    org: University of Bologna
+    location: Cesena, Italy
+    dates: 2021 – 2024
+    note: >-
+      Final grade 108/110. Thesis: Aggregate Computing in Rust for
+      resource-constrained devices (→ RuFi).
+  - degree: B.Sc. Computer Science and Engineering
+    org: University of Bologna
+    location: Cesena, Italy
+    dates: 2018 – 2021
+    note: >-
+      Thesis: vendor-agnostic middleware integrating smart health devices,
+      with a React Native proof of concept.
