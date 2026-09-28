@@ -13,7 +13,7 @@
   sans: "Inter",
   display: "Inter Display",
   mono: "JetBrains Mono",
-  body-size: 9.4pt,
+  body-size: 9.2pt,
 )
 
 // Inline Typst markup coming from YAML strings.
@@ -24,7 +24,7 @@
   set document(title: name + " — CV", author: name)
   set page(
     paper: "a4",
-    margin: (x: 1.55cm, top: 1.35cm, bottom: 1.5cm),
+    margin: (x: 1.5cm, top: 1.25cm, bottom: 1.4cm),
     footer: context {
       set text(font: theme.mono, size: 7pt, fill: theme.muted)
       grid(
@@ -74,7 +74,7 @@
 }
 
 // ── Generic dated entry (experience, education) ─────────────
-#let entry(title, org, location, dates, body) = block(breakable: true, below: 1.05em, {
+#let entry(title, org, location, dates, body) = block(breakable: true, below: 0.9em, {
   block(sticky: true, below: 0.5em, grid(
     columns: (1fr, auto),
     row-gutter: 0.35em,

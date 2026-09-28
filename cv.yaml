@@ -16,31 +16,30 @@ contacts:
   - { label: "Bologna, Italy" }
 
 summary: >-
-  Software engineer building distributed platforms at the intersection of
-  systems engineering and machine learning. For the past two years I have led
-  the development of an open-source Digital Twin ecosystem for healthcare —
-  Kotlin microservices, a TypeScript frontend and containerised deployments —
-  and co-designed its MLOps and federated learning layers, published in
+  Software engineer building distributed platforms where systems engineering
+  meets machine learning. I lead development of an open-source Digital Twin
+  ecosystem for healthcare (Kotlin microservices, TypeScript, Docker) and
+  co-designed its MLOps and federated learning layers, published in
   peer-reviewed venues. Previously built cloud ETL pipelines on Snowflake at
-  Philip Morris International. Fluent in Kotlin, Rust, Python and TypeScript.
+  Philip Morris International.
 
 experience:
   - role: Research Fellow — Software Engineering
     org: University of Urbino "Carlo Bo"
     location: Urbino, Italy
-    dates: Mar 2024 – Present
+    dates: Mar 2025 – Present
     bullets:
       - >-
-        Lead developer and maintainer of
-        #link("https://github.com/Whitelabel-Human-Digital-Twin")[*White Label Human Digital Twin*],
-        an open-source platform for healthcare Digital Twins: Kotlin/Ktor
-        microservices for persistence and twin provisioning, a TypeScript
-        monitoring frontend, and a Docker Compose deployment shipping images
-        via GHCR and GitHub Actions.
+        Author and maintainer of #link("https://github.com/ktwinx/ktwinx")[*ktwinx*],
+        a Kotlin framework for Human Digital Twins published on Maven Central,
+        with a pluggable WLDT-based runtime and MQTT distribution; successor
+        to the original WHDT framework.
       - >-
-        Author of #link("https://github.com/ktwinx/ktwinx")[*ktwinx*], a Kotlin
-        framework for Human Digital Twins with a pluggable runtime (WLDT-based
-        implementation) and MQTT-based distribution.
+        Lead developer of the
+        #link("https://github.com/Whitelabel-Human-Digital-Twin")[*White Label Human Digital Twin*]
+        platform built on it: Kotlin/Ktor microservices for persistence and
+        twin provisioning, a TypeScript monitoring frontend, and a Docker
+        Compose deployment shipping images via GHCR and GitHub Actions.
       - >-
         Co-designed *Digital Twin Aggregates*, a hierarchical architecture
         that drives drift-aware model retraining (MLOps) across patient twins
@@ -51,12 +50,12 @@ experience:
         development of preterm infants and delivered its full-stack monitoring
         system (#link("https://github.com/Whitelabel-Human-Digital-Twin/whdt-monitor-infra")[whdt-monitor]).
       - >-
-        Co-supervised several bachelor's theses and curricular internships.
+        Co-supervised bachelor's theses and internships.
 
   - role: Data Engineer
     org: Philip Morris International
     location: Bologna, Italy
-    dates: Feb 2023 – Feb 2024   # TODO confirm start date
+    dates: Feb 2024 – Feb 2025
     bullets:
       - >-
         Built and operated a scheduled ETL pipeline (Matillion, Python,
@@ -65,8 +64,8 @@ experience:
       - >-
         Product Owner and developer of the *Sustainability Dashboard*
         (Power BI, Dataflows), computing KPIs such as acquired-material
-        tonnage and recyclability, used by the Sustainability department
-        for reporting to regulatory authorities.
+        tonnage and recyclability, used by Sustainability for reporting to
+        regulators.
 
   - role: Software Engineer (Summer Internship)   # TODO confirm contract type
     org: Dofra srl
@@ -74,30 +73,34 @@ experience:
     dates: Jun 2021 – Aug 2021
     bullets:
       - >-
-        Built an Android app (Java) collecting telemetry from industrial
-        battery chargers over Bluetooth/Wi-Fi, backed by a Node.js/Express
-        service on MongoDB.
+        Android app (Java) collecting telemetry from industrial chargers over
+        Bluetooth/Wi-Fi, with a Node.js + MongoDB backend.
 
 projects:
   - name: RuFi — Rust Fields
     url: https://github.com/lm98/rufi
     tags: [Rust, ESP32, Distributed Systems]
     desc: >-
-      Rust implementation of the Aggregate Computing paradigm for programming
-      collective adaptive systems via computational fields. Core and
-      distributed crates; runs on ESP32 microcontrollers. MSc thesis.
+      Aggregate Computing in Rust: program collective adaptive systems via
+      computational fields. Core and distributed crates; runs on ESP32. MSc thesis.
+  - name: ollama-fit
+    url: https://github.com/concettarium/ollama-fit
+    tags: [Rust, CLI, LLM tooling]
+    desc: >-
+      CLI that profiles local hardware (CPU, RAM, GPU VRAM via NVML, sysfs and
+      Apple Silicon unified memory) and ranks Ollama models by whether they
+      fit, estimating memory per quantization level. Linux, macOS, Windows.
   - name: Football Forge
     url: https://github.com/lm98/fforge
     tags: [Rust, Simulation, CLI]
     desc: >-
-      Offline football management simulator in Rust, structured as a
-      multi-crate workspace (simulation core, domain model, game frontend).
-      Playable from the CLI; in active development.
+      Offline football management simulator in Rust: multi-crate workspace
+      (simulation core, domain model, game). Playable from the CLI; in progress.
 
 publications:
-  - authors: "L. Micelli et al."
+  - authors: "L. Micelli, D. Domini, S. Burattini, S. Montagna"
     title: "Digital Twin Aggregates for Hierarchical and Adaptive Collaborative Learning in Smart-Healthcare"
-    venue: "Under review"
+    venue: "IEEE J. Biomedical and Health Informatics (under review)"
     year: 2026
   - authors: "D. Domini, L. Micelli, S. Burattini, S. Montagna"
     title: "Digital Twin Aggregates for adaptive MLOps retraining policies in healthcare"
