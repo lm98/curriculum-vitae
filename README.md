@@ -5,7 +5,7 @@ Source of my CV, written in [Typst](https://typst.app).
 | File | What it is |
 |---|---|
 | `cv.yaml` | **All the content.** Edit this to update the CV. |
-| `themes/*.typ` | Layouts: `modern` (default), `sidebar`, `editorial`. Colors, fonts and spacing live in each file's `theme` dictionary. |
+| `themes/*.typ` | Layouts: `editorial` (default), `modern`, `sidebar`. Colors, fonts and spacing live in each file's `theme` dictionary. |
 | `cv.typ` | Entry point: loads the YAML and renders it with the selected theme. |
 | `fonts/` | Vendored fonts (Inter, JetBrains Mono, Source Serif 4 — all SIL OFL) so builds are identical everywhere. |
 

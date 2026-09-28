@@ -1,5 +1,5 @@
 TYPST ?= typst
-THEME ?= modern
+THEME ?= editorial
 FONTS  = --font-path fonts --ignore-system-fonts
 FLAGS  = $(FONTS) --input theme=$(THEME)
 

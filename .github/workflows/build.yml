@@ -20,7 +20,7 @@ jobs:
           typst-version: "0.15"
 
       - name: Compile
-        run: typst compile --font-path fonts --ignore-system-fonts --input theme=${{ vars.CV_THEME || 'modern' }} cv.typ Leonardo_Micelli_CV.pdf
+        run: typst compile --font-path fonts --ignore-system-fonts --input theme=${{ vars.CV_THEME || 'editorial' }} cv.typ Leonardo_Micelli_CV.pdf
 
       - uses: actions/upload-artifact@v4
         with:
